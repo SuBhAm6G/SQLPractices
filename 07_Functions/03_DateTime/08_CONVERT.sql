@@ -1,0 +1,3 @@
+SELECT
+CONVERT(INT, '123'),
+CONVERT(datetime, '2027-06-27')

@@ -1,0 +1,5 @@
+SELECT 
+3.515,
+ROUND(3.515,2) AS round2,
+ROUND(3.515,1) AS round1,
+ROUND(3.515,0) AS round0

@@ -1,3 +1,4 @@
+--LEFT ANTI JOIN
 SELECT
 o.OrderID,
 c.*

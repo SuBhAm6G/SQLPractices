@@ -1,0 +1,16 @@
+SELECT
+CATEGORY,
+SUM(Sales) TotalSales
+FROM(
+SELECT 
+	OrderID,
+	Sales,
+	CASE
+		WHEN Sales > 50 THEN 'HIGH'
+		WHEN Sales > 20  THEN 'MEDIUM'
+		ELSE 'LOW'
+	END CATEGORY
+	FROM Sales.Orders
+) subquery
+GROUP BY CATEGORY
+ORDER BY TotalSales DESC

@@ -1,0 +1,5 @@
+SELECT
+	OrderID,
+	Sales,
+	DENSE_RANK() OVER(ORDER BY Sales DESC) RANKS 
+FROM Sales.Orders

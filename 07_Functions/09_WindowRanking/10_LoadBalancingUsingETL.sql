@@ -1,0 +1,5 @@
+--DIVIDE THE ORDERS IN 2 GROUPS
+SELECT 
+NTILE(2) OVER( ORDER BY OrderID) Buckets,
+*
+FROM Sales.Orders
